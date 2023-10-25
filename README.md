@@ -1,10 +1,9 @@
-# Masai Construct Week-1 Project: [SkinStore clone](https://idyllic-biscuit-d36106.netlify.app/an-skinstore/homepage/) 
+ [SkinStore clone](https://idyllic-biscuit-d36106.netlify.app/an-skinstore/homepage/) 
 
-## Team: Masai-School-DNA^2 
+
 
 /   * *begin* *   / 
 
-### **Project Goal**
 
 To clone [SkinStore.com](https://www.skinstore.com/), across user experience and backend functionality with HTML, JS, and CSS, while displaying the use of Local Storage and DOM manipulation.
 
@@ -91,12 +90,7 @@ Netlify link - [SkinStore clone](https://idyllic-biscuit-d36106.netlify.app/an-s
  
 
 
-### **Our Team: Masai-School-DNA2**  
 
-Dilasa Thapa: pw08-425  
-Nehal Ahmad: pw06-113  
-Aman Ninave: pa04-045  
-Aman Singh: pw08-329  
 
 
 
