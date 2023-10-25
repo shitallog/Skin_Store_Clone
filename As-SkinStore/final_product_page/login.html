@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login </title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div id="login-header"> 
+        <img src="https://s1.thcdn.com/enterprise/assets/skstr-global-113e023e-ecc9-45df-abad-eb92ce1956c9-logo-default.svg" alt="">
+    </div>
+
+    <div id="login-body">
+        <div id="login-body-left">
+                <form id="loginsucess" >
+                    <h2> Existing Customers </h2>
+
+                    <p> *Email Address</p>
+                    <input id="enteremail" type="text" />
+
+                    <p> *Password</p>
+                    <div>
+                        <input id="enterPass" type="text"/>
+                        <button>SHOW</button>
+                    </div>
+                    <p> <a href="" > FORGOT YOUR PASSWORD? </a></p>
+
+                    <input id="login-body-left-submit" type="submit" value="SIGN IN"/>
+                </form>
+
+        
+
+                <p> Or , Continue With </p>
+
+                <div id="login-body-left-buttons">
+                    <button> <img src="./facebook.png" /> <span> Facebook </span></button>
+                    <button> <img src="google.png" /> <span> Google </span> </button>
+                </div>
+        
+        </div>
+        <div id="login-body-right">
+            <div> 
+                <h2> New Customers </h2>
+                <input type="button" id="gotoregister" value="Continue"/>
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+
+       // for Register page 
+       document.querySelector("#gotoregister").addEventListener("click" , GoRegister);
+    function GoRegister(){
+        window.location.href="./../../As-SkinStore/final_product_page/register.html";
+    }
+
+    var JData = JSON.parse(localStorage.getItem("userdetails")) || [];
+
+   
+
+    document.querySelector("form").addEventListener("submit" , callcheck);
+    function callcheck(){
+        event.preventDefault();
+        var temp1 = document.querySelector("#enteremail").value;
+        var temp3 = document.querySelector("#enterPass").value;
+        var check = false;
+        
+        var temp = JData.map(function (elem) {
+
+
+            if(elem.email  == temp1 && elem.password == temp3){
+                localStorage.setItem("username", elem.name);
+                check = true;
+            }
+            
+        })
+        
+        if(!check){
+            alert("Wrong Id or Password")
+        }else {
+            alert("login sucessful");
+            window.location.href="./../../An-SkinStore/HomePage/Afterlogin.html";
+        }
+
+
+    }
+
+    
+</script>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Order Placed </title>
+
+    <style>
+        div {
+            text-align: center;
+            height: 30rem;
+            border: 0px solid;
+        }
+        img {
+            width: 60%;
+            height: 80%;
+            text-align: center;
+            border: none;
+            border-radius: 20px;
+            /* margin-right: 150px; */
+            z-index: 0;
+        }
+
+        button {
+            margin: auto;
+            display: block;
+            margin-top: -30px;
+            border: none;
+            padding: 15px 35px 15px 35px;
+
+            z-index: 2;
+            background-color: rgb(65, 216, 65);
+            position: relative;
+            border-radius: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <img src="https://www.shutterstock.com/image-vector/mobile-shopping-app-modern-online-260nw-1729852726.jpg" alt="">
+        <!-- <img src="./Slideimages/orderplacedgif.jpg" alt=""> -->
+        <button>&nbsp &nbsp &nbsp &nbsp &nbsp <b> Go to My Orders </b> &nbsp &nbsp &nbsp &nbsp &nbsp </button>
+
+    </div>
+
+
+</body>
+</html>
+
+
+<script>
+
+    document.querySelector("button").addEventListener("click" , function () {
+        // localStorage.clear();
+        window.location.href = "./../../An-SkinStore/HomePage/MyOrders.html";
+    })
+
+</script>

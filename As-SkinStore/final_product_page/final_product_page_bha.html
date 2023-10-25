@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Final Product Page </title>
+    <script src="https://kit.fontawesome.com/10a9376e27.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./final_product_page_bha.css">
+
+    <style>
+        * {
+            margin: 0px;
+            font-family: sans-serif;
+            padding: 0px;
+        }
+
+        div {
+            border: 0px solid;
+        }
+
+        #ANParent {
+
+            /* border: 1px solid; */
+            width: 100%;
+        }
+
+
+        /* <<<<<<<<<<<<<----------------Main Section Top ------------------------------>>>>>>>>>> */
+
+        #TopHeader {
+            overflow: hidden;
+            position: fixed;
+            background-color: white;
+            width: 100%;
+            margin-top: -80px;
+            z-index: 3;
+
+        }
+
+        #TopHeader+div {
+            height: 160px;
+        }
+
+
+        #MainSec {
+            display: flex;
+            justify-content: space-between;
+            height: 105px;
+            border: 1px solid;
+            width: 100%;
+        }
+
+        #MainSec>div:first-child {
+            width: 16%;
+            margin-left: 33px;
+
+        }
+
+        #MainSec>div:first-child>h1 {
+            text-align: center;
+            font-size: 45px;
+            margin-top: 15px;
+
+        }
+
+        #MainSec>div:first-child>p {
+            text-align: center;
+            font-size: 12.8px;
+
+        }
+
+
+        #MainSec>div:first-child>p>span {
+            font-weight: 700;
+
+        }
+
+        #MainSec>div:nth-child(2) {
+            width: 40%;
+            padding-top: 34px;
+            margin: 0px 15%;
+            margin-left: 13%;
+            display: flex;
+
+        }
+
+        #MainSec>div:nth-child(2)>input {
+            width: 98%;
+            height: 38px;
+
+        }
+
+        #MainSec>div:nth-child(2)>img {
+            width: 33px;
+            height: 32px;
+            /* border: 1px solid; */
+            margin-left: -39px;
+            margin-top: 5px;
+        }
+
+        #MainSec>div:nth-child(3) {
+            width: 9%;
+            padding-top: 35px;
+            margin-right: 0%;
+
+        }
+
+        #MainSec>div:nth-child(3)>button {
+            width: 100%;
+            height: 35px;
+            font-size: 19px;
+            border: none;
+            background-color: white;
+            color: rgb(219, 32, 32);
+            font-weight: 545;
+        }
+
+        #MainSec>div:nth-child(3)>button:hover {
+            background-color: rgba(235, 226, 226, 0.418);
+        }
+
+        #MainSec>div:nth-child(4) {
+            width: 9%;
+            padding-top: 35px;
+            margin-right: 45px;
+        }
+
+        #MainSec>div:nth-child(4)>button {
+            width: 100%;
+            height: 35px;
+            font-size: 19px;
+            padding-left: 18px;
+            border: none;
+            background-color: white;
+            color: rgb(219, 32, 32);
+            font-weight: 545;
+        }
+
+        #MainSec>div:nth-child(4)>button:hover {
+            background-color: rgba(235, 226, 226, 0.418);
+        }
+
+        #MainSec>div:nth-child(4)>button>img {
+            height: 20px;
+            width: 20px;
+        }
+
+        #TopHeader>hr {
+            border: 1px solid;
+        }
+
+        #AnAccount {
+            z-index: 1;
+            width: 300px;
+
+            border: 0px solid green;
+            margin-bottom: 30px;
+            margin-top: -38px;
+            margin-left: 66.5%;
+            position: fixed;
+            overflow: hidden;
+            display: none;
+            height: fit-content;
+        }
+
+        #AnAccount>div:first-child {
+            background-color: grey;
+            padding: 5px;
+            border: brown;
+        }
+
+        #AnAccount>div:first-child>button {
+            display: block;
+            width: 90%;
+            text-align: center;
+            margin: auto;
+            background-color: white;
+            padding: 15px;
+            border: 1px solid teal;
+            /* margin: 5px 0px 5px 0px; */
+        }
+
+
+        #AnAccount>div:last-child>button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin: auto;
+            background-color: white;
+            color: black;
+            padding: 15px;
+            border: 1px solid grey;
+            margin-top: 5px;
+            margin: 5px 10px 5px 0px;
+        }
+
+        #AnAccount>div>button:hover {
+            background-color: brown;
+            color: white;
+        }
+
+        /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -----Top NavBar ------>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+        #TopNav {
+            border-bottom: 1px solid rgba(167, 204, 204, 0.418);
+
+            padding-left: 16px;
+            height: 36px;
+
+        }
+
+        #TopNav>button {
+            height: 35px;
+            padding: 5px 12px;
+            font-size: 14.2px;
+            font-weight: 300;
+            padding-top: px;
+            padding-bottom: 6px;
+            border: none;
+            color: gray;
+            background-color: white;
+        }
+
+        #TopNav>button:hover {
+            background-color: black;
+        }
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <div id="ANParent">
+        <div id="TopHeader">
+            <header id="MainSec">
+                <div>
+                    <h1>SkinStore</h1>
+                    <p>part of the <span> LOOK FANTASTIC </span> group</p>
+
+                </div>
+                <div>
+                    <input type="text" name="" id="TopSearch" placeholder="  Search for a product or brand...">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdRngp-yntOGZZNWgGjLOfOqNV256nuT0kDaNMsdwpO4s_QUcBQ8QON7noh2id7kAkMJ4&usqp=CAU"
+                        alt="">
+                </div>
+                <div>
+                    <button> <i class="fa-regular fa-user"></i> Account </button>
+                </div>
+                <div>
+                    <button> <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADgCAMAAADCMfHtAAAAkFBMVEX39/f/AAD2///3+/v3+vr5zc3+MjL7kpL8hYX+JSX5w8P5vr78i4v44+P37e38goL+Kir35+f38vL+QUH43d37oKD6qqr5yMj9U1P+OTn8fHz9Z2f7lJT9WVn42Nj6ubn8b2/8dXX6qKj9Y2P/Ghr7mpr+Ly/9TEz9Vlb6sLD+SEj/DQ3+QED40tL+HR39X18tUML7AAAMJUlEQVR4nO1daZfiKhCNEFtbTdRojPu+tPv//3ePJQsEutueQFCe98M7b5gzkhsqxXKrCsd544033njjjTf+Z4AIrumH0AgQLMJ1w4MAWMoThBWK3jiMuo59PMG4wuE0XkddF/G0hSZcVCTYHtqDyLeDJxzJGMY8h61BNYAvztP/nmCM86x+nPsAmn7Sf4Tb/ZUhRSd81YEMHmRYqYyC16QIZg9TPAHTD/tPcOcPM6w0X/NbBMeHGc5ecxAdcD09StF7zS/RcUE3CseP0Ky96CAijhBN6063EY4vPzK8vegYJqA8vUa4/Had03hNX8OD8HT7zZ2M5+ZlzVRAxvODo9h9cTvNg/DkJsydDWaaB2C9z80eM80AB+wgRjYOIrc4n9g4iGDFUgxMP44GuFeWYWijmYI9w3Bvo5nCkB3Eq2VTIgHna1Y2DiKY2O5rYJVluLbS13wyDC82mincsYM4t9DX8MeqYxsHEdxZiqafRgdgg2V4tNHXwBvDsGelmU7ZQexb72vqVg4iJ3BY+SE2WYYLKymyDIdWmmmLpfiqEsZPcD2WYcvKQTwwDM9WfohcYMqLyqW/gGX4qnLpjwB1631Nn2U4tXIQWaF4i2P8ErgxTD9hUUAuqmFVm4bhenBcNKOoer3O+57X9QMHiICv8yoejS86f+5Hp9Nwtlmuxu16axqu0Zs4LhoN9CrIm8CvwnGJevdcbyIfqlkQ59vn/uPSO8wmqzF+E9goQmwU8ZvoojfhB0EsZErfBFT8Jv4SX6QQ21tnP7pcTsP7khpFbbdDb6KJbCIxCmwTDlQwR4MfgjXNY1RzCnPk5dInxLwwxcdjGQ3BL/pJ8nLpE6KwcMTLpc+IggRzcmllNK23x6vlZHP/OvQ+bmdTtBgUDvmBa+73hCUMJIdyfa/fn8+vUWOxOA7W4W7aarUw/cNmNjyNOtvtEzPMxb4LUhs9dvTpPJxNzIg71q8azKyNpukg6HreCrUvk1ex29XqyCg299mQTEy3PIFfUVzeBEv29z7yH3bMUPLvMENh3+y6oF3BhyLcyyCIKjhqgIxI4Hc9ZBPVqNFoNsniuDVt1ennMTz0RqOP9Nv5LD7ru5xcKsj6f2SI2ilDoZ1IJZ2knbEJYkTd/NeRPM9BwaYOdliGealNE0MGhGFu/51tXVWEGfByad47m2EIo+RxagrWpi7va3JSmyGGg28e598ANizDnNRmiGEteRwloYW8XJqT2swwzBy8mgMyyE3YvNRmiGF6Wq0m2oeXS3lfY8hKk3AYBdMhRi7jjZPazDBMD6tVJWfxcik3yRphmKlGS0UMf/A1Zhim66yWKjnF5fZJ7PMZYZgd5A5UMeTl0rPpMYSp61OW1cPLpeyDG2GYna2oi4MBQ5YhI+ubYZg+jbrg11wef9ahGStNtodKpWmO4RQkQgPdvgWp8JAi3uOL7ZSh2E53wMIPxftDth2mD6MyHo2XS7fXagISd9OoCrjiA4nwKrbjJeVK0o7j5z/F9iqZqZpcUxrrozK5jpdLnwVKs1zBw+nDJUJpDDp8PAm8PCiOEOF++zb6iIH/9CGCHA52JH+Bt2I3SXvnmx8iHeyFnyBQG4LOy6Wj5NCLaDcyrRs/cUPSjpdHNUk79aUiSAc+15TGaKvNBcnJpVVqINrnQ1ecD9PpUHVUKC+XxpmJRmb85BmE8+mCyPkaqtwZYJhtyO+qY3x4uZR6ahMMU8WvrZohL5dSEzHAMFsjK0//zMmlRMIwwTDNj1QfnM37GiIZGGBIfoFAfUZWTi7Fs5EJhul0qKHkAy9h4EMSEwzTyhZFqHwDXi4dATMMk/4/NQSE8tml+Dson2GmhWmJW+ayS7FcaoDhnOlePfhMduRrymeYZfNoqbwiyKUGGKYOXU+uEp/JfgLlM8xOp6taAm4zBZ2gD8tnmL5jTekDICeX0tNELo6XhsnQ00SxHR/a1STtEWEo/AXdAXezdtDLvIAW8KEZ5x2xmVZNwA6/ieVUaJ9i+XYoaV+h9u1O/CHSQT37B2n/ugogPVwgVDtUBAtJ8YfymXqhrSYJn11qEFNtyWa8XEo2VO26ABJ9OZG045PlQ0v8C+wit5J2slcaZ/8+NSF9ZQJAjWVIXGsgOQXkoy8zUF8qP03sPHCamKqj+uqQ5eRS8gCS96BpPlQdLCQF+DLJUHGwkBRi2fMyGSZe4KYzqxUaZKg8WEgKPjSjVIaZE9BaokuQS8tjqDZ29nvk5dISGaoPFpIiL5eWyDBdeOsuAWyKoY5gISmyc+eyGQ5/6FMlcnKpZAGllmEXunHySaKObnXnDHPFeGVxLYUZ0oySeF3a96LFYFdffaXdai9elcsuFRMd/5FhkicEHd+rNo5ha/zNdlR/dVxeLhWVvEcZJkNF9xb9aBFOx5Nh79fEP/21q/jQDFFC+IVhnNEFnS4iNQhby9mHnMl30F+wMieXCmeXOYY0TSvZH64ax11rtel9Sh/+IZRQpZqXS4WQ8uQ0kQwV+qjmyP5q48nhQ1HiaQn1KnNyKZ2ekqGKz0traKiWX5e9/CELoYzCsbnQDDJU/WvzuKutZqe95hzhUiod5uTS8R9dRTGUcjFFLru0VJRU5xAUcIXFMCiHYF4u1Y/tx9ekPR1ExQt+PIicXKoHncNkXAuPjbnn01NZqKJoy6Pg5VJ1pHr3JSLVvPZ9B8akoJlSTFCZr/k8fS3bu3UzmuPrJmNW5utLQafIGG5HxP4WEbI/dqgMk2IB+n/1pefO6T5uIfurJlXCno4UCyC98FNkdUH2Fx4XUb8buDC1P9NP/zvc3EkNh9EM2d96EV09H4KnHyo5oN8TiSH7a1y9uEjdC5JiASROtOO9iv09ACBZzExKW2joB3Q2IsGwpJViGQCeZJKo2kRQkuF18u2xUBdKikW2X/XuYAlcR5KFuLDIQqHkE7z1bSIoyZS9WzRJoBEUCe4sGkDHCcTKeTZNErKYxJ5Fk4Qjy3QeWzRJYAi1Wo9WWagYJGTVJEGQG8KNTZMEQU5oet07yb8FHwRl4e1I/Om2jXd48cW+bLwukNNg7LwaiT06tPPaTlbutfKubo6hnqQ4w+CsVG/oqiFwnsbGySI3W7SAZbsKDH5Z2jt6gcNWG8lKqT0ASebP36H8HfO5Thjb7RlhG+NG8YnR+ezE2GMkdaMoLpdLD+FEcMAYsvj6mmHcETabzQRjibAiGCO0Cer1naf6WykjKOFvWKkuofR897GoXltxlwU+BxRXHCgleOZvUH0pIzRz+dNPUJ2BqC56RhWUb+Og9/crRLRCfVKJ66i9iK0gtGxUwfxZsvErus4aADg+wx1IGFp0SwhDht/sgFZeaAl2ueD1GFqZ7fedDlq2oeVbvJg7x9DAb6PlSBrMOYV0JkvDf2DRnEC4yTDg4CM4fGjZl9f1KBygw0SBUC+i+NV1v/SYD9z58KHGyy5l86HeO3Qli+GOzv6SPWK70e83V/T/RzoZJkmO21rVmy/iMCWVBa5ziPNT7wGuKg6BR8/5dcZCxdWE6g7tcU7XG9oyLeLKO0v0haOdPP4P3WzoG8Q4MR2HCmC35EAqs2s7JqJJ1LhUA6hOp3PguNRq9ZQUw6BHmGjh4sJGLUR7+njtryvFme4Pj9CBpOMWiE82VN2DIumR8Lm6TkA+iCOIq14qr8uagPTnu4mS2ITUEYx0MaSfxRmkCep9l8YS6CoXQTbAW5imHSKfRs1UG8NrbKSJD5/G7/RLJ0P0GSbVU3ClLb0MyfQ7A+khWBvQehzatC/SS5DmybTi/nQUESWgP98BaYHyI6RFuHRlcVPrbMCkrknyReqbgV3Sj+fGxcVGMM6u1lXUhIozB+yzkVe9ezC+Gkyfmki9dxu5mgZ6u6vAjQ/DIk2zRZy7vUbTEwgCNO/Ht5YUvlT5W8RRWBF6qcB3QBJ3pvqELUMcjrEGuAe0iKIhRPqmw8RMcUI46dGlK1Nt02FaWOjU9AHwF/uK5iHMKm5tqmgt3F1TJ67otjwpss1atmdXfElIvseV2KPWsjT8fUHxV6kV8J7vMdLbY37LrT+GHfL5Y+er7h5Bnym3NykjgBZETHGKegnxgi7o14hPHe48LWdBAiCo1jHJ833tlxNA4JLDMg0y8+89ltXhG2+88cYbb7zxxhtvvPE/xn9Sq+L99v7laAAAAABJRU5ErkJggg=="
+                            alt=""> Cart</button>
+                </div>
+
+            </header>
+            <hr>
+
+            <div id="AnAccount">
+                <div>
+                    <button>Hello <span id="userName"></span> &nbsp &nbsp &nbsp&nbsp LOGOUT</button>
+                    <button>My Account</button>
+                </div>
+                <div>
+                    <button>Wishlist</button>
+                    <button>Your Orders</button>
+                    <button>Your Refrals</button>
+                </div>
+            </div>
+
+            <nav id="TopNav">
+                <button>Black Friday Sale</button>
+                <button>Brands</button>
+                <button>Skin Care</button>
+                <button>Hair</button>
+                <button>Makeup</button>
+                <button>Bath & Body</button>
+                <button>Fragrance</button>
+                <button>Self-Care</button>
+                <button>Tools</button>
+                <button>New & Trending</button>
+                <button>Build a Routine</button>
+                <button>Blog</button>
+
+            </nav>
+
+        </div>
+    </div>
+
+    <div></div>
+    <!--this div is used for spacing  -->
+
+        
+
+    <div id="pp-main">
+        <div id="pp-main-top-h">
+            <div id="pp-main-top-h-left">
+                <div id = "pp-main-top-h-left-img">
+                    <div id ="pp-main-top-h-left-img-list">
+                        <ul>
+                            <li> <img id="altimg1" src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289657-9384876690289403.jpg" alt=""> </li>
+                            <li> <img id="altimg2" src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289657-1754876690336179.jpg" alt=""> </li>
+                            <li> <img id="altimg3" src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289657-7504876690381737.jpg" alt=""> </li>
+                        </ul>
+                    </div>
+
+                    <div id ="pp-main-top-h-left-img-slide">
+                        <i class="fa-solid fa-chevron-left fa-2x"></i>
+                        <img id="mainMidImg" src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289657-9384876690289403.jpg" alt="">
+                        <i class="fa-solid fa-chevron-right fa-2x"></i>
+                        
+                    </div>
+                    <div id ="pp-main-top-h-left-img-magnify">
+                        <p> <i class="fa-sharp fa-solid fa-magnifying-glass-plus fa-3x"></i> </p>
+                    </div>
+                </div>
+
+                <div id = "pp-main-top-left-emi">
+
+                    <ul>
+                        <li>
+                            <img src="https://download.logo.wine/logo/Klarna/Klarna-Logo.wine.png" alt="">
+                            <span> 4 installments of $59.00 with Klarna Slice </span>
+                            <a href=""> Learn More <i class="fa-solid fa-chevron-right"></i></a> 
+                            
+                        </li>
+
+                        <li>
+                            <img src="./afterpay2.png" />
+                            <span> 4 installments of $59.00 with Afterpay </span>
+                            <a href=""> Learn More <i class="fa-solid fa-chevron-right"></i> </a> 
+                            
+                        </li>
+
+                        <li>
+                            <img src="./zip.png"/>
+                            <span> 4 installments of $59.00 with Zip </span>
+                            <a href=""> Learn More  <i class="fa-solid fa-chevron-right"></i> </a> 
+                           
+                        </li>
+
+                    
+                    </ul>
+                </div>
+
+                <hr> 
+
+                <div id = "pp-main-top-left-desc">
+                    <p> Description </p>
+                    
+                    <p> 
+                        This exfoliating cleanser gently scrubs away dead skin using ultra-fine Jojoba Beads with Alpha-Hydroxy and Beta-Hydroxy Acids to improve the appearance of skin tone and texture.
+                        <p class="text-capitalize"> Benefits: </p>
+
+                    </p>
+
+                    <ul>
+                        <li>
+                            Thoroughly removes environmental pollutants, excess oil and makeup.
+                        </li>
+                        <li>
+                            Hydrates and refreshes skin.
+                        </li>
+                        <li>
+                            Can be used by all skin types.
+                        </li>
+                    </ul>
+                    
+                    <hr>
+
+
+                </div>
+
+                <div id = "pp-main-top-left-deets">
+                    <p> Product Details </p>
+                    <table>
+                        <tr class="odd-table">
+                            <td> Ingredients: </td>
+                            <td>  <p> Water/Aqua/Eau, Sodium C14-16 Olefin Sulfonate, Cocamidopropyl Betaine, PEG/PPG-8/3 Diisostearate, Hydrogenated Jojoba Oil, Acrylates Copolymer, Vaccinium Myrtillus Fruit/Leaf Extract, Saccharum Officinarum Extract, Acer Saccharum Extract, Citrus Aurantium Dulcis Fruit Extract, Citrus Limon Fruit Extract, Salicylic Acid, Glycyrrhiza Glabra Root Extract, Panthenol, Bisabolol, Citric Acid, Glycerin, Ethylhexylglycerin, Sodium Hydroxide, Disodium EDTA, Potassium Sorbate, Phenoxyethanol, Lavandula Angustifolia Oil, Citrus Aurantium Dulcis Peel Oil, Mica, Tin Oxide, Titanium Dioxide (CI 77891). </p></td>
+                        </tr>
+
+                        <tr class="even-table">
+                            <td> Brand: </td>
+                            <td> SkinMedica </td>
+                        </tr>
+
+                        <tr class="odd-table">
+                            <td> Range </td>
+                            <td> Cleanse </td>
+                        </tr>
+
+                        <tr class="even-table">
+                            <td> Directions:  </td>
+                            <td> <p> Moisten skin with warm water. Apply a small amount to the fingertips, add a little water and gently exfoliate and cleanse the face using small circular motions. Rinse thoroughly with warm water. Use as often as needed. Avoid getting in eyes. If contact occurs, rinse eyes thoroughly with water. </p></td>
+                        </tr>
+                    </table>
+                </div>
+
+
+            </div>
+
+            <div id="pp-main-top-h-right">
+                <div id="pp-main-top-h-right-pLogo">
+                    <img src="https://s1.thcdn.com/design-assets/images/logos/shared-brands/colour/skinmedica.gif" alt="">
+                </div>
+
+                <h1 id="pp-main-top-h-right-pName">SkinMedica AHA/BHA Exfoliating Cleanser (6oz)</h1>
+                
+                <div id="pp-main-top-h-right-pRating"> 
+                    <i class="fa-solid fa-star"></i> 
+                    <i class="fa-solid fa-star"></i> 
+                    <i class="fa-solid fa-star"></i> 
+                    <i class="fa-solid fa-star"></i> 
+                    <span>( 13 review )</span>
+                </div>
+                
+                <div id="pp-main-top-h-right-pOffer">
+                    <ul>
+                        <li> 
+                            <input type="radio" id="pp-main-top-h-right-pOffer-radio1" name="" value="" for="abcz">
+                            <span> $38.40</span>
+                            <span> One Time Purchase</span>
+                        </li>
+                        <li>
+                            <input type="radio" id="pp-main-top-h-right-pOffer-radio2" name="" value="" for="abcz">
+                            <span> $30.70</span>
+                            <span> Subscribe</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id = "pp-main-top-h-right-phidden"> 
+                    <div>
+                        <div> 
+                            <p> How Subscription Works  <i class="fa-solid fa-rotate"></i> </p>
+                            
+                        </div>
+
+                        <div id="pp-main-top-h-right-phidden-list">
+                            <table>
+                                <tr>
+                                    <td> <i class="fa-sharp fa-solid fa-check"></i></td>
+                                    <td> Save an additional 20% on your first subscription order. All future subscriptions will be at 20% off MSRP.</td>
+                                </tr>
+                                <tr>
+                                    <td> <i class="fa-sharp fa-solid fa-check"></i></td>
+                                    <td> Free delivery on all future orders. Qualify for free delivery on your first when you spend over $50. </td>
+                                </tr>
+                                <tr>
+                                    <td> <i class="fa-sharp fa-solid fa-check"></i></td>
+                                    <td> You control the frequency </td>
+                                </tr>
+                                <tr>
+                                    <td> <i class="fa-sharp fa-solid fa-check"></i></td>
+                                    <td> No commitment. Cancel or delay</td>
+                                </tr>
+
+                            </table> 
+
+                        </div>
+
+                        <button> Find More </button>
+
+                    </div>
+
+                    <div>
+                        <p>Deliver Every: </p>
+                        
+                        <select>
+                            <option value="month1">1 month</option>
+                            <option value="month2">2 month</option>
+                            <option value="month3">3 month (Recommended)</option>
+                            <option value="month4">4 month</option>
+                        </select>
+
+                        <div>
+                            <h1>$86.66 </h1>
+                            <p> Recurring Payment</p>
+                            <p>Save an additional 20% on your first subscription order. All future subscriptions will be at 20% off MSRP.</p> 
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="pp-main-top-h-right-pPrice">
+                    <p> MSRP : $48.00</p>
+                    <h1> $38.40 </h1>
+                    <p> Save : $9.60</p>
+                    <p> Subscribe to this product to save 20% </p>
+                </div>
+
+                <hr>
+
+                <div id="pp-main-top-h-right-pQuantity">
+                    <span> Quantity </span>
+
+                    <div>
+                        <button> - </button>
+                        <input type="text" value="1" />
+                        <button> + </button>
+                    </div>
+                </div>
+
+                <div id="pp-main-top-h-right-cart-button">
+                    <button> Add to Cart</button>
+                </div>
+
+                <div id="pp-main-top-h-right-cart-wishlist">
+                    <button id="pp-main-top-h-right-cart-wishlist-button">  <i class="fa-solid fa-heart"></i> Add to WishList</button>
+                    <p> In stock </p>
+                </div>
+
+                <div id="pp-main-top-h-right-cart-gift">
+                    <span> 20% off + $135 SkinMedica Gift </span>
+                    <div>
+                        <img src="https://s1.thcdn.com//productimg/300/300/13308963-1374904754658650.jpg" alt="">
+                        <div>
+                            <p> SkinMedica Eye Illuminating Kit (Worth $135.00) </p>
+                            <p> Worth $135.00 </p> 
+
+                        </div>
+            
+                    </div>    
+                </div>
+
+                <div id="pp-main-top-h-right-cart-gift-deets">
+                    <p> 20% off + $135 SkinMedica Gift </p>
+                    
+                    <hr>
+
+                    <p> Receive a SkinMedica Eye Illuminating Kit (Worth $135) when you spend $200 or more on the brand. Complimentary gift will be awarded at the cart. Offer valid for a limited time only, while supplies last.</p>
+                    
+                    <button> SHOP NOW </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="pp-main-mid"> 
+            <h1>Frequently Bought Together</h1> 
+            <div id = "pp-main-mid-bundle">
+                
+                <div id="pp-main-mid-left-bundle">
+                    <div>
+                        <div> <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289657-9384876690289403.jpg" alt=""> </div>
+                        <div> 
+                            <p> This Item </p>
+                            <p> SkinMedica AHA/BHA Exfoliating Cleanser (6oz) </p> 
+                            <p> $ 38.40 </p>  
+                        </div>
+                    </div>
+
+                    <div>
+                        <div> <img src="https://static.thcdn.com/images/large/webp/productimg/1600/1600/11289661-1794453993724103.jpg" alt=""> </div>
+                        <div> 
+                            <p> Recommended Item </p>
+                            <p> SkinMedica Facial Cleanser </p> 
+                            <p> $ 32.00 </p>  
+                        </div>
+                    </div>
+    
+                </div>
+
+                <div id="pp-main-mid-right-bundle-price"> 
+                    <h1> Total Price: $70.40 </h1>
+                    <button> ADD BOTH TO CART </button>
+                </div>
+            </div>
+
+            <div id = "pp-main-mid-customer-bought">
+                <h2>Other Customers Bought</h2> 
+
+                <div id="pp-main-mid-customer-bought-images">
+                    <div> 
+                            <img src="https://static.thcdn.com/images/large/webp/productimg/1600/1600/11289661-1794453993724103.jpg" alt=""> 
+                            <h3> SkinMedica Award Winning System (Worth $639.00)</h3>
+                            <button> 20% off + $135 SkinMedica Gift </button>
+                            <div> 
+                                <i class="fa-solid fa-star"></i> 
+                                <i class="fa-solid fa-star"></i> 
+                                <i class="fa-solid fa-star"></i> 
+                                <i class="fa-solid fa-star"></i> 
+                            </div>
+                            <p> MRP <span> $123</span> </p>
+                            <p> $99.00 </p>
+                            <button> Quick Buy</button>  
+                    </div>
+                    <div> 
+                        <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289681-1484871019698619.jpg" alt="">
+                        <h3> SkinMedica HA5 Hydrating Complex 1 oz </h3>
+                        <button> 20% off + $135 SkinMedica Gift </button>
+                        <div> 
+                            <i class="fa-solid fa-star"></i> 
+                            <i class="fa-solid fa-star"></i> 
+                            <i class="fa-solid fa-star"></i> 
+                            <i class="fa-solid fa-star"></i> 
+                        </div>
+                        <p> MRP <span> $123</span> </p>
+                        <p> $100.00 </p>
+                        <button> Quick Buy</button>  
+                    </div>
+                    <div> 
+                        <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289692-1614871030026608.jpg" alt="">
+                        <h3>SkinMedica Neck Correct Cream 2 oz </h3>
+                        <button>20% off + $135 SkinMedica Gift </button>
+                        <div> 
+                            <i class="fa-solid fa-star"></i> 
+                            <i class="fa-solid fa-star"></i> 
+                            <i class="fa-solid fa-star"></i> 
+                            <i class="fa-solid fa-star"></i> 
+                        </div>
+                        <p> MRP <span>$123</span> </p>
+                        <p> $112.60 </p>
+                        <button> Quick Buy</button>  
+                    
+                    </div>
+                    <div> 
+                        <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/11289656-1194870995967011.jpg" alt="">
+                    
+                        <h3>SkinMedica TNS Recovery Complex 1 oz (Worth $285) </h3>
+                        <button> 20% off + $135 SkinMedica Gift </button>
+                        <div> 
+                            <i class="fa-solid fa-star"></i> 
+                            <i class="fa-solid fa-star"></i> 
+                            <i class="fa-solid fa-star"></i> 
+                            <i class="fa-solid fa-star"></i> 
+                        </div>
+                        <p> MRP <span> $123 </span></p>
+                        <p> $96.72 </p>
+                        <button> Quick Buy</button>  
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <div id="pp-main-bottom">
+            <div id="pp-main-bottom-customer-reviews">
+                <div> <h2> Customer Reviews  </h2></div>
+                
+                <div id="pp-main-bottom-customer-reviews-flex">
+                    <div>
+                        <div>
+                            <h2> 4.67 </h2>
+                            <div>
+                                <i class="fa-solid fa-star"></i> 
+                                <i class="fa-solid fa-star"></i> 
+                                <i class="fa-solid fa-star"></i> 
+                                <i class="fa-solid fa-star"></i> 
+                            </div>  
+                            <p> (12 Reviews)</p>
+                        </div>
+
+                        <div>
+                            
+                        </div>
+
+                        <div>
+                            <button> SEE ALL REVIEWS </button>
+                            <button> WRITE A PRODUCT REVIEW </button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div> 
+                            <p> Top Customer Reviews </p>
+                            <p> Where reviews refer to foods or cosmetic products, results may vary from person to person. Customer reviews are independent and do not represent the views of The Hut Group.</p>
+                        </div>
+
+                        <hr>
+
+                        <div class="pp-main-bottom-customer-reviews-card"> 
+                            <div> 
+                                <h3> 
+                                    Skin Medica AHA/BHA Exfoliating Cleansere
+                                </h3> 
+                                <span> 
+                                    <i class="fa-solid fa-star"></i> 
+                                    <i class="fa-solid fa-star"></i> 
+                                    <i class="fa-solid fa-star"></i> 
+                                    <i class="fa-solid fa-star"></i> 
+                                </span>
+
+                            </div>
+
+                            <div> 
+                                <p>
+                                    So far it seems to be good, like the way it feels.
+                                </p> 
+                            </div> 
+
+                            <div>
+                                <span> 10/29/22</span>
+                                <span>by Cheryl </span>
+                                <span> VERIFIED PURCHASE </span>
+                            </div>
+
+                            <p> Did you find this review helpful ? </p>
+
+                            <div>
+                                <button> <i class="fa-solid fa-thumbs-up"></i>  YES </button>
+                                <button> <i class="fa-solid fa-thumbs-down"></i>  NO </button>
+                                <p>Report this review </p> 
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="pp-main-bottom-customer-reviews-card"> 
+                            <div> 
+                                <h3> 
+                                    Best cleanser ever
+                                </h3> 
+                                <span> 
+                                    <i class="fa-solid fa-star"></i> 
+                                    <i class="fa-solid fa-star"></i> 
+                                    <i class="fa-solid fa-star"></i> 
+                                    <i class="fa-solid fa-star"></i> 
+                                </span>
+
+                            </div>
+
+                            <div> 
+                                <p>
+                                    I have been looking for an exfoliating cleanser thats not so harsh that it feels like there is sand in it, and this is it! My skin has improved and feels so fresh every time I use it! I love this brand and you won't be disappointed with this product.
+                                </p> 
+                            </div> 
+
+                            <div>
+                                <span> 10/29/22</span>
+                                <span>by Cheryl </span>
+                                <span> VERIFIED PURCHASE </span>
+                            </div>
+
+                            <p> Did you find this review helpful ? </p>
+
+                            <div>
+                                <button> <i class="fa-solid fa-thumbs-up"></i>  YES </button>
+                                <button> <i class="fa-solid fa-thumbs-down"></i>  NO </button>
+                                <p>Report this review </p> 
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="pp-main-bottom-customer-reviews-card"> 
+                            <div> 
+                                <h3> 
+                                    Exfoliates and Brightener
+                                </h3> 
+                                <span> 
+                                    <i class="fa-solid fa-star"></i> 
+                                    <i class="fa-solid fa-star"></i> 
+                                    <i class="fa-solid fa-star"></i> 
+                                    <i class="fa-solid fa-star"></i> 
+                                </span>
+
+                            </div>
+
+                            <div> 
+                                <p>
+                                    Works perfectly. I wanted a mild exfoliating scrub that wasnt too harsh and this is perfect for my skin. I use this 3xs a week and have noticed a difference in my skin . Will buy again.
+                                </p> 
+                            </div> 
+
+                            <div>
+                                <span> 10/29/22</span>
+                                <span>by Cheryl </span>
+                                <span> VERIFIED PURCHASE </span>
+                            </div>
+
+                            <p> Did you find this review helpful ? </p>
+
+                            <div>
+                                <button> <i class="fa-solid fa-thumbs-up"></i>  YES </button>
+                                <button> <i class="fa-solid fa-thumbs-down"></i>  NO </button>
+                                <p>Report this review </p> 
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="pp-main-bottom-customer-reviews-card"> 
+                            <div> 
+                                <h3> 
+                                    great cleanser
+                                </h3> 
+                                <span> 
+                                    <i class="fa-solid fa-star"></i> 
+                                    <i class="fa-solid fa-star"></i> 
+                                    <i class="fa-solid fa-star"></i> 
+                                    <i class="fa-solid fa-star"></i> 
+                                </span>
+
+                            </div>
+
+                            <div> 
+                                <p>
+                                    This exfoliating cleanser is great for my 52 yo acne prone oilier skin. It cleanses thoroughly after workouts especially if used with a Clarisonic type brush.
+                                </p> 
+                            </div> 
+
+                            <div>
+                                <span> 10/29/22</span>
+                                <span>by Cheryl </span>
+                                <span> VERIFIED PURCHASE </span>
+                            </div>
+
+                            <p> Did you find this review helpful ? </p>
+
+                            <div>
+                                <button> <i class="fa-solid fa-thumbs-up"></i>  YES </button>
+                                <button> <i class="fa-solid fa-thumbs-down"></i>  NO </button>
+                                <p>Report this review </p> 
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="pp-main-bottom-customer-reviews-card"> 
+                            <div> 
+                                <h3> 
+                                    favorite cleanser
+                                </h3> 
+                                <span> 
+                                    <i class="fa-solid fa-star"></i> 
+                                    <i class="fa-solid fa-star"></i> 
+                                    <i class="fa-solid fa-star"></i> 
+                                    <i class="fa-solid fa-star"></i> 
+                                </span>
+
+                            </div>
+
+                            <div> 
+                                <p>
+                                    I tried this exfoliating cleanser in a travel kit, and fell in love with the texture and the way it cleanses and smooths my skin without making it feel overly-scrubbed or tight. I can see a difference with the AHA/BHA, my skin tone is more even and freckles are fading. I highly recommend this product not only for when you want to exfoliate, but for a gentle daily cleanser.
+                                </p> 
+                            </div> 
+
+                            <div>
+                                <span> 10/29/22</span>
+                                <span>by Cheryl </span>
+                                <span> VERIFIED PURCHASE </span>
+                            </div>
+
+                            <p> Did you find this review helpful ? </p>
+
+                            <div>
+                                <button> <i class="fa-solid fa-thumbs-up"></i>  YES </button>
+                                <button> <i class="fa-solid fa-thumbs-down"></i>  NO </button>
+                                <p>Report this review </p> 
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="pp-main-bottom-customer-reviews-card"> 
+                            <div> 
+                                <h3> 
+                                    Love it
+                                </h3> 
+                                <span> 
+                                    <i class="fa-solid fa-star"></i> 
+                                    <i class="fa-solid fa-star"></i> 
+                                    <i class="fa-solid fa-star"></i> 
+                                    <i class="fa-solid fa-star"></i> 
+                                </span>
+
+                            </div>
+
+                            <div> 
+                                <p>
+                                    Great cleanser, love the way my skin feels afterward
+                                </p> 
+                            </div> 
+
+                            <div>
+                                <span> 10/29/22</span>
+                                <span>by Cheryl </span>
+                                <span> VERIFIED PURCHASE </span>
+                            </div>
+
+                            <p> Did you find this review helpful ? </p>
+
+                            <div>
+                                <button> <i class="fa-solid fa-thumbs-up"></i>  YES </button>
+                                <button> <i class="fa-solid fa-thumbs-down"></i>  NO </button>
+                                <p>Report this review </p> 
+                            </div>
+                        </div>
+
+                        <hr>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+        
+    </div>
+<script src="./final_product_page_bha.js"></script>  
+</body>
+</html>
+
+<!--script for header -->
+<script>
+    
+    var Wishlst = JSON.parse(localStorage.getItem("wishlist")) || [];
+    var amanninave = ""
+
+    var userN = localStorage.getItem("username");
+
+    document.querySelector("#userName").textContent = userN;
+
+    
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----------Top Header Section ------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+     // for Home page
+     document.querySelector("#MainSec > div:first-child").addEventListener("click", BackToHome);
+    function BackToHome() {
+        if (userN == "") {
+            window.location.href = "./../../An-SkinStore/HomePage/index.html";
+        } else {
+            window.location.href = "./../../An-SkinStore/HomePage/Afterlogin.html";
+        }
+    }
+
+
+    // for cart page 
+    document.querySelector("#MainSec > div:nth-child(4) > button").addEventListener("click", Gocart);
+
+    var CartValue =JSON.parse( localStorage.getItem("cartdata") ) || [] ;
+    function Gocart() {
+        if(CartValue.length == 0){
+            window.location.href = "./../../Dt-SkinStore/dt_cart_wishlist/pro_emptycart.html";
+        }else{
+
+            window.location.href = "./../../Dt-SkinStore/dt_cart_wishlist/pro_cart.html";
+        }
+        
+    }
+
+    // for login page 
+    document.querySelector("#AnAccount > div:first-child > button:first-child ").addEventListener("click", GoLogin);
+    function GoLogin(){
+        window.location.href="./../../As-SkinStore/final_product_page/login.html";
+    }
+
+    // for Register page 
+    document.querySelector("#AnAccount > div:first-child > button:last-child ").addEventListener("click", GoRegister);
+    function GoRegister() {
+        window.location.href = "./../../amans_SkinStore/register.html";
+    }
+
+    // for Wishlist page
+    document.querySelector("#AnAccount > div:last-child > button:first-child ").addEventListener("click", GoWishlist);
+    function GoWishlist() {
+        // console.log(Wishlst);
+        if(Wishlst.length == 0){
+            
+            window.location.href = "./pro_emptywishlist.html";
+            // console.log("1234");
+        }else{
+            
+            window.location.href = "./../../Dt-SkinStore/dt_cart_wishlist/pro_wishlist.html";
+            // console.log("000");
+        }
+        
+        
+    }
+
+    //For Your orders page        NOt made
+    // document.querySelector("#AnAccount > div:last-child > button:nth-child(2) ").addEventListener("click" , GoOrders);
+    // function GoOrders(){
+    //     window.location.href="./../../Dt-SkinStore/dt_cart_wishlist";
+    // }
+
+    //For Your Skincare page
+    document.querySelector("#TopNav > button:nth-child(3) ").addEventListener("click", GoSkinCare);
+    document.querySelector("#TopNav > button:nth-child(2) ").addEventListener("click", GoSkinCare);
+    function GoSkinCare() {
+        window.location.href = "./../../Na-SkinStore/Productpage/Productpage.html";
+    }
+
+     //For Hair Page
+     document.querySelector("#TopNav > button:nth-child(4) ").addEventListener("click" , GoHair);
+    
+    function GoHair(){
+        window.location.href="./../../Na-SkinStore/Productpage/hair.html";
+    }
+
+    //For MakeUp page
+    document.querySelector("#TopNav > button:nth-child(5) ").addEventListener("click" , GoMakeUP);
+    
+    function GoMakeUP(){
+        window.location.href="./../../Na-SkinStore/Productpage/makeup.html";
+    }
+
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   New Changes >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+     //For Bath & Body  page
+     document.querySelector("#TopNav > button:nth-child(6) ").addEventListener("click" , GoBody);
+    // document.querySelector("#CategoryDiv > div:nth-child(2) > img:nth-child(2) ").addEventListener("click" , GoBody);
+   
+    function GoBody(){
+        window.location.href="./../../Na-SkinStore/Productpage/bodyandbath.html";
+    }
+
+     //For Fragrance page
+     document.querySelector("#TopNav > button:nth-child(7) ").addEventListener("click" , GoFragrance);
+    // document.querySelector("#CategoryDiv > div:nth-child(1) > img:nth-child(3) ").addEventListener("click" , GoFragrance);
+   
+    function GoFragrance(){
+        window.location.href="./../../Na-SkinStore/Productpage/frangenehal.html";
+    }
+
+     //For Self Care page
+     document.querySelector("#TopNav > button:nth-child(8) ").addEventListener("click" , GoSelf);
+    // document.querySelector("#CategoryDiv > div:nth-child(2) > img:nth-child(3) ").addEventListener("click" , GoSelf);
+   
+    function GoSelf(){
+        window.location.href="./../../Na-SkinStore/Productpage/selfcare.html";
+    }
+
+    document.querySelector("#TopNav > button:nth-child(9) ").addEventListener("click" , GoTools);
+    // document.querySelector("#CategoryDiv > div:nth-child(2) > img:nth-child(3) ").addEventListener("click" , GoSelf);
+   
+    function GoTools(){
+        window.location.href="./../../Na-SkinStore/Productpage/tools.html";
+    }
+
+
+ // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   New Changes >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+    //From Search to product page for Skin medica
+    document.querySelector("#MainSec > div:nth-child(2) > img ").addEventListener("click", GoToSkinMedica2);
+    function GoToSkinMedica2() {
+        var ip = document.querySelector("#TopSearch").value;
+
+        if (ip == "skin medica" || ip == "Skin Medica" || ip == "skin Medica" || ip == "SKIN MEDICA" || ip == "skinmedica" || ip == "SKIN MEDICA" || ip == "SkinMedica") {
+            window.location.href = "./../../An-SkinStore/HomePage/ProductListPage.html";
+        }
+        if (ip == "Terry" || ip == "terry" || ip == "TERRY") {
+            window.location.href = "./../../As-SkinStore/terry_iframe.html/terry_product_list.html";
+        }
+
+        if(ip == "Fragrance" || ip == "fragrance" || ip == "FRAGRANCE"  || ip == "fRAGRANCE"){
+            window.location.href = "./../../An-SkinStore/HomePage/fragrancepage.html";
+        }
+    }
+
+    // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<----------Account Div ------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    document.querySelector("#MainSec > div:nth-child(3)").addEventListener("click", showAcc);
+    function showAcc() {
+        var x = document.querySelector("#AnAccount");
+
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+
+        x.style.zIndex = "10";
+
+    }
+
+
+</script>
